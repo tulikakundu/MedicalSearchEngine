@@ -1,6 +1,7 @@
 package com.example.mainactivity;
 
 import android.content.Intent;
+import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -20,6 +21,8 @@ public class Login_Form extends AppCompatActivity {
     private FirebaseAuth.AuthStateListener mFirebaseAuthListener;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login__form);
         //getSupportActionBar().setTitle("Medical search Engine");
