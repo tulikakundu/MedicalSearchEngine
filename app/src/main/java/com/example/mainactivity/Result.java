@@ -171,19 +171,14 @@ public class Result extends AppCompatActivity {
         //add colors to dataset
         ArrayList<Integer> colors = new ArrayList<>();
         colors.add(Color.GRAY);
-        colors.add(Color.BLUE);
-        colors.add(Color.RED);
-        colors.add(Color.GREEN);
-        colors.add(Color.CYAN);
-        colors.add(Color.YELLOW);
-        colors.add(Color.MAGENTA);
-
+        colors.add(Color.rgb(198, 218, 38));
+        colors.add(Color.rgb(218, 38, 108));
+        colors.add(Color.rgb(244, 143, 177
+        ));
+        colors.add(Color.rgb(38, 198, 218));
+        colors.add(Color.rgb(255, 204, 128));
+        colors.add(Color.rgb(	0, 230, 118));
         pieDataSet.setColors(colors);
-
-        //add legend to chart
-       // Legend legend = pieChart.getLegend();
-       // legend.setForm(Legend.LegendForm.CIRCLE);
-        //legend.setPosition(Legend.LegendPosition.LEFT_OF_CHART);
 
         //create pie data object
         PieData pieData = new PieData(pieDataSet);
@@ -265,6 +260,7 @@ public class Result extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         //added comment here
+        getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
         fun();
