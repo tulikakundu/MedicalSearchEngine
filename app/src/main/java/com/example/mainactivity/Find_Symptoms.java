@@ -28,6 +28,7 @@ public class Find_Symptoms extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_find__symptoms);
         btn =(Button) findViewById(R.id.submitbtn);
+
         final AutoCompleteTextView editTextt = findViewById(R.id.searchbar);
          ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 R.layout.drop_down,Disease);

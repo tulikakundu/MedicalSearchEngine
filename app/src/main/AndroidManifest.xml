@@ -4,9 +4,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/coffee"
+        android:icon="@drawable/grandmother"
         android:label="@string/MSE"
-        android:roundIcon="@drawable/coffee"
+        android:roundIcon="@drawable/grandmother"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Dadi"></activity>
