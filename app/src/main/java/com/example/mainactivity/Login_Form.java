@@ -59,12 +59,12 @@ public class Login_Form extends AppCompatActivity {
         email = (EditText)findViewById(R.id.email_btn);
         password = (EditText)findViewById(R.id.pass_btn);
 
-        email.setText("new@gmail.com");
-        password.setText("admin12345");
-        String em="new@gmail.com";
-        String pw="admin12345";
-        //String em=email.getText().toString();
-        //String pw=password.getText().toString();
+        //email.setText("new@gmail.com");
+        //password.setText("admin12345");
+       // String em="new@gmail.com";
+        //String pw="admin12345";
+        String em=email.getText().toString();
+        String pw=password.getText().toString();
 
 
 
