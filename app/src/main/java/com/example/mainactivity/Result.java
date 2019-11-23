@@ -125,7 +125,7 @@ public class Result extends AppCompatActivity {
                         }
                     }
 
-                    String employee = xData[pos1+1];
+                    String employee = xData[pos1];
                     Toast.makeText(Result.this, "Most probably - "+employee, Toast.LENGTH_LONG).show();
                     Intent i =new Intent(Result.this,Treatment.class);
                     i.putExtra("disease_name",employee);
@@ -222,7 +222,7 @@ public class Result extends AppCompatActivity {
 
 
                             //arr now contains tokenised string
-                            int count =0;
+                            int count =0;int k=0;
                             boolean x;
                             for(int i=0;i<arr.length;i++)
                             {
@@ -233,7 +233,18 @@ public class Result extends AppCompatActivity {
                                     if(x==true)
                                     {
                                         count++;
+
                                     }
+                                }
+                            }
+                            String unique = snapshot.child("UNIQUE SYMPTOMS").getValue().toString();
+                            boolean y;
+                            for(int i=0;i<arr.length;i++)
+                            {
+                                y=unique.equals(Find_Disease.results[i].toUpperCase());
+                                if(y==true)
+                                {
+                                    count = count*3;break;
                                 }
                             }
 
