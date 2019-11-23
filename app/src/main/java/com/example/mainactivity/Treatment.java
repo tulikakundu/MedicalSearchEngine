@@ -32,9 +32,10 @@ public class Treatment extends AppCompatActivity {
         b=findViewById(R.id.salt22);
         btn = findViewById(R.id.nxt);
         String dname=getIntent().getStringExtra("disease_name");
+        //String employee=getIntent().getStringExtra("employee");
         if(dname == NULL)
         {
-            System.out.println("HELLO HJIHA");
+            //dname=employee;
         }
         Log.d("dname os",dname);
         dref = FirebaseDatabase.getInstance().getReference().child("DISEASE").child(dname);
