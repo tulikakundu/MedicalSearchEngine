@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:background="@drawable/backgroundmse1"
+    tools:context=".Login_Form">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="191dp"
+        android:src="@drawable/login"
+        android:layout_marginTop="20dp"
+        android:padding="30dp"
+        />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:layout_marginTop="40dp"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/cardview_light_background"
+
+        >
+
+        <EditText
+            android:id="@+id/email_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email Id"
+            android:textColor="#ffffff"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:textSize="18sp"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:layout_marginTop="30dp"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/cardview_light_background"
+        >
+
+        <EditText
+            android:id="@+id/pass_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="password"
+            android:ems="10"
+            android:textColor="#ffffff"
+            android:inputType="textPassword"
+            android:textSize="18sp"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/submitbtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:text="SUBMIT"
+        android:textSize="22dp"
+        android:textColor="@color/cardview_light_background"
+        android:background="@drawable/button_rounded"
+        android:onClick="btn_Login"
+        />
+    <Button
+        android:id="@+id/signupbtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:text="NEW USER"
+        android:textSize="22dp"
+        android:textColor="@color/cardview_light_background"
+        android:background="@drawable/button_rounded"
+        android:onClick="btn_SignupForn"
+        />
+
+</LinearLayout>

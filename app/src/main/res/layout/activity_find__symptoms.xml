@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:background="@drawable/backgroundmse1">
+
+    <AutoCompleteTextView
+        android:id="@+id/searchbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:hint="SELECT A DISEASE"
+        android:layout_gravity="center"
+        android:completionThreshold="1"
+        android:textColor="@color/cardview_dark_background"
+        android:dropDownAnchor="@id/text_view_disease"
+        android:textColorHint="@color/cardview_shadow_start_color"
+        android:completionHint="Select a disease"
+        android:popupBackground="@color/cardview_shadow_end_color"
+
+        android:background="@drawable/edittext_rounded"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:id="@+id/text_view_disease"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Disease"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:paddingBottom="16dp"
+        android:textColorHint="@color/cardview_light_background"
+        />
+
+    <Button
+        android:id="@+id/submitbtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="350dp"
+        android:text="SUBMIT"
+        android:textSize="22dp"
+        android:textColor="@color/cardview_light_background"
+        android:background="@drawable/button_rounded"
+        android:onClick="btn_Login"
+        />
+
+
+    </LinearLayout>

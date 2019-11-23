@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundmse1"
+    tools:context=".Dashboard">
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="174dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/symptoms1"
+        android:onClick="btn_Symptoms"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Find Symptoms"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        android:textAlignment="center"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="174dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/disease"
+        android:onClick="btn_disease"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Find Disease"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        android:textAlignment="center"/>
+
+
+
+</LinearLayout>
