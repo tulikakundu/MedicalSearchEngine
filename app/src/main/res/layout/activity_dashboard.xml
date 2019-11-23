@@ -20,13 +20,14 @@
         android:onClick="btn_Symptoms"
 
         />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Find Symptoms"
+        android:text="Find Treatment"
+        android:textAlignment="center"
         android:textColor="#ffffff"
-        android:textSize="25dp"
-        android:textAlignment="center"/>
+        android:textSize="25dp" />
 
     <Button
         android:layout_width="match_parent"
@@ -38,13 +39,14 @@
         android:onClick="btn_disease"
 
         />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Find Disease"
+        android:text="Predict Disease"
+        android:textAlignment="center"
         android:textColor="#ffffff"
-        android:textSize="25dp"
-        android:textAlignment="center"/>
+        android:textSize="25dp" />
 
 
 
