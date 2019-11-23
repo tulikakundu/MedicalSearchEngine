@@ -22,7 +22,7 @@ public class Login_Form extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login__form);
-        getSupportActionBar().setTitle("Medical search Engine");
+        //getSupportActionBar().setTitle("Medical search Engine");
 
         mFirebaseAuth = FirebaseAuth.getInstance();
         mFirebaseAuthListener = new FirebaseAuth.AuthStateListener() {

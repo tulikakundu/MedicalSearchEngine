@@ -11,7 +11,7 @@ public class Dashboard extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
-        getSupportActionBar().setTitle("Medical search Engine");
+        //getSupportActionBar().setTitle("Medical search Engine");
     }
     public void btn_Symptoms(View view) {
         startActivity(new Intent(getApplicationContext(),Find_Symptoms.class));

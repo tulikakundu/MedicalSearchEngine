@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Treatment"></activity>
+        <activity android:name=".Dadi"></activity>
+        <activity android:name=".Treatment" />
         <activity android:name=".Result" />
         <activity android:name=".Find_Disease" />
         <activity android:name=".Find_Symptoms" />
