@@ -89,7 +89,7 @@ public class Result extends AppCompatActivity {
         }
         pieChart = (PieChart) findViewById(R.id.idPieChart);
 
-        pieChart.setDescription("Sales by employee (In Thousands $) ");
+        //pieChart.setDescription("Sales by employee (In Thousands $) ");
         pieChart.setRotationEnabled(true);
         //pieChart.setUsePercentValues(true);
         //pieChart.setHoleColor(Color.BLUE);
@@ -174,9 +174,9 @@ public class Result extends AppCompatActivity {
         pieDataSet.setColors(colors);
 
         //add legend to chart
-        Legend legend = pieChart.getLegend();
-        legend.setForm(Legend.LegendForm.CIRCLE);
-        legend.setPosition(Legend.LegendPosition.LEFT_OF_CHART);
+       // Legend legend = pieChart.getLegend();
+       // legend.setForm(Legend.LegendForm.CIRCLE);
+        //legend.setPosition(Legend.LegendPosition.LEFT_OF_CHART);
 
         //create pie data object
         PieData pieData = new PieData(pieDataSet);
