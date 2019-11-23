@@ -250,7 +250,7 @@ public class Result extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-
+        //added comment here
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
         fun();
