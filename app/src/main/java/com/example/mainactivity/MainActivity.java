@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    private static int SPLASH_TIME=4000;
+    //private static int SPLASH_TIME=4000;
     ImageView i;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,13 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
 
-                startActivity(new Intent(MainActivity.this,Login_Form.class));
-            }
-        },SPLASH_TIME);
 
 
     }

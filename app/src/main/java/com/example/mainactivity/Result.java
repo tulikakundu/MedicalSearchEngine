@@ -126,7 +126,7 @@ public class Result extends AppCompatActivity {
                     }
 
                     String employee = xData[pos1+1];
-                    Toast.makeText(Result.this, "Most probably - "+employee, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Result.this, "Most probably - "+employee, Toast.LENGTH_LONG).show();
                     Intent i =new Intent(Result.this,Treatment.class);
                     i.putExtra("disease_name",employee);
                    startActivity(i);
