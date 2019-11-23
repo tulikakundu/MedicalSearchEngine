@@ -48,7 +48,7 @@
     <TextView
         android:id="@+id/dadi11"
         android:layout_width="283dp"
-        android:layout_height="57dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
@@ -66,7 +66,7 @@
     <TextView
         android:id="@+id/dadi22"
         android:layout_width="287dp"
-        android:layout_height="56dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
