@@ -6,6 +6,7 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.github.mikephil.charting.charts.PieChart;
 import com.github.mikephil.charting.components.Legend;
@@ -123,7 +124,9 @@ public class Result extends AppCompatActivity {
                             break;
                         }
                     }
+
                     String employee = xData[pos1+1];
+                    Toast.makeText(Result.this, "Most probably - "+employee, Toast.LENGTH_SHORT).show();
                     Intent i =new Intent(Result.this,Treatment.class);
                     i.putExtra("disease_name",employee);
                    startActivity(i);
