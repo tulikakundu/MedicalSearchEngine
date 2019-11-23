@@ -1,5 +1,6 @@
 package com.example.mainactivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -89,7 +90,7 @@ public class Result extends AppCompatActivity {
         }
         pieChart = (PieChart) findViewById(R.id.idPieChart);
 
-        //pieChart.setDescription("Sales by employee (In Thousands $) ");
+        pieChart.setDescription("Diseases by their chances");
         pieChart.setRotationEnabled(true);
         //pieChart.setUsePercentValues(true);
         //pieChart.setHoleColor(Color.BLUE);
@@ -123,7 +124,10 @@ public class Result extends AppCompatActivity {
                         }
                     }
                     String employee = xData[pos1+1];
-                    Log.d("employee",employee);
+                    Intent i =new Intent(Result.this,Treatment.class);
+                    i.putExtra("disease_name",employee);
+                   startActivity(i);
+
                 }
                 catch(Exception e1)
                 {
